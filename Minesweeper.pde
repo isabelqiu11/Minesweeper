@@ -1,3 +1,4 @@
+
 import de.bezier.guido.*;
 //Declare and initialize constants NUM_ROWS and NUM_COLS = 20
 public final static int NUM_ROWS = 20;
@@ -138,9 +139,11 @@ public class MSButton
     {
     
         clicked = true;
-        if(mouseButton == RIGHT){
+        if(mouseButton == RIGHT ){
           flagged = !flagged;
           numflags++;
+          
+       
         }else if(mines.contains(this)){
          displayLosingMessage(); 
         }else if(countMines(myRow,myCol) >0){
@@ -188,3 +191,7 @@ public class MSButton
         return flagged;
     }
 }
+
+
+
+
